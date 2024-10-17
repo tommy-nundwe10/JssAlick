@@ -1,0 +1,58 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Vacuum Cleaner Project">
+
+    <title>Vacuum Cleaner</title>
+  
+
+    <link href="Extras/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap for standard LTR layout -->
+    <link rel="stylesheet" href="Extras/fontawesome/css/all.min.css"> <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main role="main" class="container-fluid">
+        <center>
+            <h1>Vacuum Cleaner Simulator</h1>
+            <h3><i>Enter number of rows and columns to begin simulation</i></h3></center><br>
+        <div class="form-row">
+            
+            <div class="col">
+                <center><label for="m-num">Rows</label></center> 
+                <input id="m-num" type="number" class="form-control">
+            </div>
+            <div class="col">
+                <center><label for="n-num">Columns</label></center>
+                <input id="n-num" type="number" class="form-control">
+            </div>
+            <div class="col">
+                <center><label for="delay-num">Delay(ms)</label></center> 
+                <input id="delay-num" type="number" class="form-control">
+            </div>
+           
+            
+        </div><center>
+        <div class="col-auto">
+
+            <button id="start-btn" class="btn btn-success mb-2">Run Simulation</button> 
+            
+            <button id="halt-btn" class="btn btn-warning mb-2">Halt</button> 
+        </div></center>
+        <div class="row">
+            <div class="col"><span id="dirt-no">Total Trash available:</span> </div>
+            <div class="col"><span id="checked-no">Perceived Cells:</span> </div>
+            <div class="col"><span id="suck-no">Number of Cells Cleaned:</span> </div>
+            <div class="col"><span id="action-no">Number of Agent Actions:</span> </div>
+        </div>
+        <div id="table-wrapper"></div> <!-- Placeholder for the table showing the environment grid -->
+    </main>
+
+    <script src="Extras/jquery/jquery.min.js"></script> <!-- jQuery -->
+    <script src="Extras/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JavaScript components -->
+    <script src="js/Main.js"></script> <!-- Custom JavaScript bundle -->
+</body>
+
+</html>
