@@ -1,0 +1,131 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.2em;
+  color: #2c3e50;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+thead {
+  background: #3498db;
+  color: #fff;
+}
+
+thead th {
+  padding: 14px 12px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tbody td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+tbody tr:hover {
+  background: #f0f8ff;
+  transition: 0.2s ease-in;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+#logBox {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 12px;
+  background: #0d304d;
+  color: #d2dae2;
+  font-family: monospace;
+  font-size: 0.9rem;
+  height: 200px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 6px rgba(22,173,207,0.4);
+}
+
+#logBox div {
+  margin-bottom: 4px;
+}
+
+#voiceBtn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#voiceBtn:hover {
+  background-color: #e68900;
+}
+
+.energy-display {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: default; 
+    box-shadow: 0 4px #2e7d32;
+}
+
+.energy-display span {
+    font-weight: normal;
+}

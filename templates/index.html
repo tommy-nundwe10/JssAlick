@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliTemp Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>IntelliTemp Dashboard</h1>
+  <p>Monitor and control your smart thermostat system</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Temperature (°C)</th>
+        <th>Humidity (%)</th>
+        <th>Setpoint (°C)</th>
+        <th>Mode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="time">--:--:--</td>
+        <td id="temp">__</td>
+        <td id="hum">__</td>
+        <td id="setpoint">22</td>
+        <td id="mode">auto</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="centered">Fan Control</h2>
+  <button id="voiceBtn">🎤 Voice Command</button>
+  <button onclick="sendFan('increase')">Increase Temp</button>
+  <button onclick="sendFan('decrease')">Decrease Temp</button>
+  <button onclick="sendFan('stop')">Stop Fan</button>
+
+  <div class="energy-display">
+  Fan 1 Energy: <span id="fan1-energy">0.0</span> Wh
+</div>
+<div class="energy-display">
+  Fan 2 Energy: <span id="fan2-energy">0.0</span> Wh
+</div>
+
+
+  <h2 class="centered">Logs</h2>
+  <div id="logBox"></div>
+
+  <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
